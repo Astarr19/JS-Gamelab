@@ -50,8 +50,74 @@ function fight(player1, player2, player1Health, player2Health) {
 }
 fight('Aidan', 'Oliver', 100, 100);
 
+// Extended Challenges
 
+/* function printSquare(width) {
+    let i = width;
+    let square = '';
+    while (i > 0) {
+        while (width > square.length) {
+            square += '#';
+        } 
+        console.log(square);
+        i--;
+    }
+}
+printSquare(4);
 
+printTriangle = (width) => {
+    let i = width;
+    let triangle = '';
+    while (i > 0) {
+        triangle += '#';
+        console.log(triangle);
+        i--;
+    }
+}
+printTriangle(5);
 
+function printDiamond(width) {
+    let i = width;
+    let diamond = '';
+    while (i > 0) {
+        diamond += '#';
+        console.log(diamond);
+        i--;
+    }
+    while (i < width) {
+        diamond = diamond.substring(1);
+        console.log(diamond);
+        i++;
+    }
+}
+printDiamond(5);
 
+function getGrade(grade) {
+    if (grade >= 90) {
+        return 'A';
+    } else if ((grade >= 80) && (grade < 90)) {
+        return 'B';
+    } else if ((grade >= 70) && (grade < 80)) {
+        return 'C';
+    } else if ((grade >= 60) && (grade < 70)) {
+        return 'D';
+    } else {
+        return 'F'
+    }
 
+}
+console.log(getGrade(65));
+
+prioritize = (urgent, important) => {
+    if ((urgent === true) && (important === true)) {
+        return 1;
+    } else if ((urgent === false) && (important === true)) {
+        return 2;
+    } else if ((urgent === true) && (important === false)) {
+        return 3;
+    } else {
+        return 4;
+    }
+}
+
+console.log(prioritize(false, true));*/
