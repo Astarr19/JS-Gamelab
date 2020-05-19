@@ -18,7 +18,6 @@ logHealth = (player, health) => {
 
 logDeath = (winner, loser) => {
     console.log(`${winner} defeated ${loser}`);
-    i--;
 }
 
 isDead = (health) => {
@@ -26,8 +25,7 @@ isDead = (health) => {
 }
 
 function fight(player1, player2, player1Health, player2Health) {
-    i = 1;
-    while (i === 1) {
+    while (true) {
         let attacker = chooseOption(player1, player2);
         if (attacker === player1) {
             player2Health = attackPlayer(player2Health);
@@ -52,7 +50,7 @@ fight('Aidan', 'Oliver', 100, 100);
 
 // Extended Challenges
 
-function printSquare(width) {
+/* function printSquare(width) {
     let i = width;
     let square = '';
     while (i > 0) {
@@ -120,4 +118,4 @@ prioritize = (urgent, important) => {
     }
 }
 
-console.log(prioritize(false, true));
+console.log(prioritize(false, true)); */
